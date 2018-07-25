@@ -29,6 +29,7 @@ function getConnectionConfig(options) {
     {                
         host: options.host,
         user: options.user,
+        port: options.port,
         password: options.password,
         database: options.db,
     };

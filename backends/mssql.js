@@ -15,6 +15,7 @@ module.exports = function mssqlBackend(opts, callback) {
         connection: {
             host: opts.host,
             user: opts.user,
+            port: opts.port !== ''? opts.port: 1433,
             password: opts.password,
             database: opts.database,
             options: {

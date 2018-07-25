@@ -2,6 +2,7 @@ var knex = require('knex')({
   client: 'mssql',
   connection: {
     host: process.env.MSSQL_SERVER,
+    port: 1435,
     user: process.env.MSSQL_USERNAME,
     password: process.env.MSSQL_PASSWORD,
     database: process.env.MSSQL_DATABASE,

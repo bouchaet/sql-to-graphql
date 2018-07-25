@@ -78,7 +78,7 @@ function initStyleOpts() {
 
 var adapter;
 function instantiate() {
-    // Do we support the given backend?
+    // Do we support the given backend?n
     var backend = backends(opts.backend);
     if (!backend) {
         return bail(new Error('Database backend "' + opts.backend + '" not supported'));
